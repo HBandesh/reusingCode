@@ -15,15 +15,7 @@ module.exports = {
         test: /\.(css|scss)$/,
         use: [
           'style-loader',
-          {
-            loader: 'css-loader',
-            options: {
-              sourceMap: true,
-              modules: true,
-              camelCase: true,
-              localIdentName: '[local]___[hash:base64:5]',
-            },
-          },
+          'css-loader',
           'sass-loader',
         ],
       },
