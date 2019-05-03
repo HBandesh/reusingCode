@@ -59,7 +59,9 @@
     "react": "16.8.6",
     "react-dom": "16.8.6",
     "react-hot-loader": "4.8.4",
-    "react-native": "https://github.com/expo/react-native/archive/sdk-32.0.0.tar.gz"
+    "react-native": "https://github.com/expo/react-native/archive/sdk-32.0.0.tar.gz",
+    "react-redux": "^7.0.3",
+    "redux": "^4.0.1"
   },
   "resolutions": {
     "babel-core": "7.0.0-bridge.0"
