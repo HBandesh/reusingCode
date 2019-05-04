@@ -1,0 +1,24 @@
+.main-section {
+    display: flex;
+    text-align: center;
+    font-size: 1.5rem;
+}
+.hit-button-wrapper, .image-wrapper {
+    width: 50%;
+}
+.hit-button-wrapper {
+    padding-top: 12%;
+}
+.hit-button {
+    color: #fff;
+    background-color: #dc3545;
+    border-color: #dc3545;
+    border-radius: .25rem;
+    padding: 1.5% 11%;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.thanos-image {
+    width: 88%;
+}

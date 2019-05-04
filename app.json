@@ -3,7 +3,7 @@
     "name": "reactNativeCodeResue",
     "slug": "codeResue",
     "privacy": "public",
-    "sdkVersion": "32.0.0",
+    "sdkVersion": "30.0.0",
     "platforms": [
       "ios",
       "android"
@@ -25,5 +25,6 @@
     "ios": {
       "supportsTablet": true
     }
-  }
+  },
+  "name": "reactNativeCodeResue"
 }

@@ -1,24 +1,35 @@
 
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-import {TestComponent} from "./platform/test/testConatinerComponent";
+import { Provider } from "react-redux";
+import { initializeStore } from "./initializeStore";
+import Header from "./app/components/header/headerComponent.js";
+import { Footer } from "./app/components/footer/footerComponent.js";
+import MainComponent from "./app/components/mainContent/mainBodyComponent.js";
 
-export default class App extends React.Component {
-  render() {
-    return (
-      <View style={styles.container}>
-        <Text>Open up App.js to start working on your app!</Text>
-        <TestComponent></TestComponent>
-      </View>
-    );
-  }
-}
+const store = initializeStore();
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: '#000000',
     alignItems: 'center',
     justifyContent: 'center',
   },
+  color: {
+    color: '#f5deb3'
+  }
 });
+export default class App extends React.Component {
+  render() {
+    return (
+      <Provider store={store}>
+        <View style={styles.container}>
+          <Header></Header>
+          <MainComponent></MainComponent>
+          <Footer></Footer>
+        </View>
+      </Provider>
+    );
+  }
+};
