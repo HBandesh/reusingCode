@@ -4,6 +4,7 @@ import { StyleSheet, Text, View } from 'react-native';
 const styles = StyleSheet.create({
     header: {
         padding:'5%',
+        marginTop: 40
     },
     pageHeading: {
         fontSize: 25,

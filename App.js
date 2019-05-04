@@ -11,10 +11,9 @@ const store = initializeStore();
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
     backgroundColor: '#000000',
     alignItems: 'center',
-    justifyContent: 'center',
+    overflow: 'scroll'
   },
   color: {
     color: '#f5deb3'

@@ -5,22 +5,19 @@ import { ThanosCaptionConatiner } from '../../../platform/thanosCaption/thanosCa
 import HitButtonContainer from "../../../platform/thanosHitButton/hitButtonContainerComponent.js";
 
 const styles = StyleSheet.create({
-    mainSection: {
-        display: 'flex',
-        textAlign: 'center',
-        fontSize: 15,
-    },
     hitButtonWrapper: {
-        width: '100%',
-        paddingTop: '12%'
+        width: '80%',
     },
     articleTitle: {
         fontSize: 15,
+        paddingBottom: 20,
+        paddingTop: 50,
         color: '#f5deb3',
         textAlign: 'center'
     },
     hitCount: {
         fontSize: 15,
+        paddingTop: 20,
         color: '#f5deb3',
         textAlign: 'center'
     }
@@ -33,7 +30,7 @@ class MainComponent extends React.Component {
 
     render() {
         return(
-            <View style={styles.mainSection}>
+            <View>
                 <ThanosCaptionConatiner></ThanosCaptionConatiner>
                 <View style={styles.hitButtonWrapper}>
                     <Text style={styles.articleTitle}>Then what are you waiting for? Go ahead and hit him</Text>

@@ -3,7 +3,8 @@ import { StyleSheet, Text, View } from 'react-native';
 
 const styles = StyleSheet.create({
     footer: {
-        padding:'5%',
+        paddingTop: 40,
+        paddingBottom: 80
     },
     footerHeading: {
         fontSize: 25,
