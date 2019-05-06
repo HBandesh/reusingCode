@@ -1,7 +1,7 @@
 # resuingCode
 Projects often fall into a scenario where they need to make a platform which can be reused both in React (for website) and React Native (for mobile Apps). This question of reusing code between the two is, in fact, one of the hot topics among React and React native developers all over the world. The approach which I am going to take is based on the fact that React Native can load platform specific Javascript modules based on their extensions.
 
-I have made this application as an example of my article "". You can read more about the concept and approach in the blog.
+I have made this application as an example of my article "https://codeburst.io/reusing-code-between-react-js-and-react-native-effectively-12bb4fbf7a70". You can read more about the concept and approach in the blog.
 
 # Installation
 1. Run npm install.
