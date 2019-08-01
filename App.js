@@ -1,4 +1,6 @@
-
+/**
+ * This Module is an entry point of the App for React Native.
+ */
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import { Provider } from "react-redux";
@@ -19,6 +21,7 @@ const styles = StyleSheet.create({
     color: '#f5deb3'
   }
 });
+
 export default class App extends React.Component {
   render() {
     return (

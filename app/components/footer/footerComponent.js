@@ -1,6 +1,10 @@
+/**
+ * This module conatins the HTML for footer.
+ */
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
+//Styles for the component
 const styles = StyleSheet.create({
     footer: {
         paddingTop: 40,

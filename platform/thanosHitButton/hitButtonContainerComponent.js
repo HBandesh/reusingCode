@@ -9,6 +9,11 @@ class HitButtonContainer extends React.Component {
         super(props);
     }
 
+    /**
+     * @function increaseCount This fuction increases the count of the number of times
+     *                          Thanos is hit when user clicks on button.
+     */
+
     increaseCount = () => {
         this.props.increaseHitCount(1);
     }

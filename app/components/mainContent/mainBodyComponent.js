@@ -1,3 +1,6 @@
+/**
+ * This module conatins the HTML for the Main Content. This is a redux component.
+ */
 import React  from 'react';
 import { connect } from "react-redux";
 import { StyleSheet, Text, View } from 'react-native';
