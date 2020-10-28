@@ -1,7 +1,7 @@
 import React  from 'react';
 import { ThanosCaptionView } from './thanosCaptionView';
 
-export const ThanosCaptionConatiner = () => {
+export const ThanosCaptionContainer = () => {
     const data = "Does this guy irritates you?"
     return(
         <ThanosCaptionView data={data}></ThanosCaptionView>

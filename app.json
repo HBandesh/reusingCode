@@ -22,7 +22,11 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.mmwebx.codeResue"
+    },
+    "android": {
+      "package": "com.mmwebx.codeResue"
     }
   },
   "name": "reactNativeCodeResue"
