@@ -1,4 +1,4 @@
-const webpackMerge = require('webpack-merge');
+const { merge } = require('webpack-merge');
 const common = require('./webpack/webpack.common');
 
 const envs = {
@@ -8,4 +8,4 @@ const envs = {
 /* eslint-disable global-require,import/no-dynamic-require */
 const env = envs[process.env.NODE_ENV || 'development'];
 const envConfig = require(`./webpack/webpack.${env}.js`);
-module.exports = webpackMerge(common, envConfig);
+module.exports = merge(common, envConfig);
