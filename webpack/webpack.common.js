@@ -73,16 +73,16 @@ module.exports = {
       },
     ],
   },
-  serve: {
-    add: app => {
-      app.use(convert(history()));
-    },
-    content: commonPaths.entryPath,
-    dev: {
-      publicPath: commonPaths.outputPath,
-    },
-    open: true,
-  },
+  // serve: {
+  //   add: app => {
+  //     app.use(convert(history()));
+  //   },
+  //   content: commonPaths.entryPath,
+  //   dev: {
+  //     publicPath: commonPaths.outputPath,
+  //   },
+  //   open: true,
+  // },
   resolve: {
     modules: ['src', 'node_modules'],
     extensions: ['*', '.js', '.jsx', '.css', '.scss'],

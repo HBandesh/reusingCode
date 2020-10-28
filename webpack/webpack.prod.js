@@ -1,12 +1,14 @@
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const CleanWebpackPlugin = require('clean-webpack-plugin');
-const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
-const TerserPlugin = require('terser-webpack-plugin');
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const { CleanWebpackPlugin } = require("clean-webpack-plugin");
+const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin");
+const TerserPlugin = require("terser-webpack-plugin");
 
-const commonPaths = require('./paths');
+const commonPaths = require("./paths");
+
+const isDevelopment = process.env.NODE_ENV !== "production";
 
 module.exports = {
-  mode: 'production',
+  mode: "production",
   output: {
     filename: `${commonPaths.jsFolder}/[name].[hash].js`,
     path: commonPaths.outputPath,
@@ -18,9 +20,6 @@ module.exports = {
         // Use multi-process parallel running to improve the build speed
         // Default number of concurrent runs: os.cpus().length - 1
         parallel: true,
-        // Enable file caching
-        cache: true,
-        sourceMap: true,
       }),
       new OptimizeCSSAssetsPlugin(),
     ],
@@ -31,13 +30,13 @@ module.exports = {
       cacheGroups: {
         vendors: {
           test: /[\\/]node_modules[\\/]/,
-          name: 'vendors',
-          chunks: 'initial',
+          name: "vendors",
+          chunks: "initial",
         },
         async: {
           test: /[\\/]node_modules[\\/]/,
-          name: 'async',
-          chunks: 'async',
+          name: "async",
+          chunks: "async",
           minChunks: 4,
         },
       },
@@ -54,15 +53,15 @@ module.exports = {
         use: [
           MiniCssExtractPlugin.loader,
           {
-            loader: 'css-loader',
+            loader: "css-loader",
             options: {
-              sourceMap: false,
-              modules: true,
-              camelCase: true,
-              localIdentName: '[local]___[hash:base64:5]',
+              modules: {
+                localIdentName: "[name]__[local]___[hash:base64:5]",
+              },
+              sourceMap: isDevelopment,
             },
           },
-          'sass-loader',
+          "sass-loader",
         ],
       },
     ],
@@ -74,5 +73,5 @@ module.exports = {
       chunkFilename: `${commonPaths.cssFolder}/[name].css`,
     }),
   ],
-  devtool: 'source-map',
+  devtool: "source-map",
 };

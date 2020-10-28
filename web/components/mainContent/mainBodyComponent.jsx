@@ -1,6 +1,6 @@
 import React  from 'react';
 import { connect } from "react-redux";
-import { ThanosCaptionConatiner } from '../../../platform/thanosCaption/thanosCaptionConatinerComponent';
+import { ThanosCaptionContainer } from '../../../platform/thanosCaption/thanosCaptionConatinerComponent';
 import HitButtonContainer from "../../../platform/thanosHitButton/hitButtonContainerComponent";
 import "./mainComponent.css"
 
@@ -12,7 +12,7 @@ class MainComponent extends React.Component {
     render() {
         return(
             <section className="main-section">
-                <ThanosCaptionConatiner></ThanosCaptionConatiner>
+                <ThanosCaptionContainer></ThanosCaptionContainer>
                 <article className="hit-button-wrapper">
                     <p className="article-title">Then what are you waiting for? Go ahead and hit him</p>
                     <HitButtonContainer></HitButtonContainer>

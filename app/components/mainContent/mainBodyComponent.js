@@ -4,7 +4,7 @@
 import React  from 'react';
 import { connect } from "react-redux";
 import { StyleSheet, Text, View } from 'react-native';
-import { ThanosCaptionConatiner } from '../../../platform/thanosCaption/thanosCaptionConatinerComponent.js';
+import { ThanosCaptionContainer } from '../../../platform/thanosCaption/thanosCaptionConatinerComponent.js';
 import HitButtonContainer from "../../../platform/thanosHitButton/hitButtonContainerComponent.js";
 
 const styles = StyleSheet.create({
@@ -34,7 +34,7 @@ class MainComponent extends React.Component {
     render() {
         return(
             <View>
-                <ThanosCaptionConatiner></ThanosCaptionConatiner>
+                <ThanosCaptionContainer></ThanosCaptionContainer>
                 <View style={styles.hitButtonWrapper}>
                     <Text style={styles.articleTitle}>Then what are you waiting for? Go ahead and hit him</Text>
                     <HitButtonContainer></HitButtonContainer>

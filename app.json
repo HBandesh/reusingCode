@@ -3,7 +3,6 @@
     "name": "reactNativeCodeResue",
     "slug": "codeResue",
     "privacy": "public",
-    "sdkVersion": "30.0.0",
     "platforms": [
       "ios",
       "android"
@@ -23,7 +22,11 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.mmwebx.codeResue"
+    },
+    "android": {
+      "package": "com.mmwebx.codeResue"
     }
   },
   "name": "reactNativeCodeResue"
